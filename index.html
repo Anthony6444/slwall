@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Spotify Wallpaper</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Wallpaper that pulls data from Spotify api.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- <button id="button" onclick="login()">Login</button> -->
+    <div class="image center-image">
+        <img id="cover" src="https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc" alt="Track Cover">
+    </div>
+    <div class="trackinfo">
+        <span class="tx title" id="track">Track Title</span>
+        <br>
+        <span class="tx artist" id="artist">Artist Name</span>
+        <div id="progress-bar-wrapper">
+            <div class="tx numbers" id="elapsed">0:00</div>
+            <div>
+            <div id="progress">
+                <div id="bar"></div>
+            </div>
+            </div>
+            <div class="tx numbers" id="duration">0:00</div>
+        </div>
+    </div>
+    <div class="next">
+        <div class="nimage">
+            <img id="ncover" src="https://i.scdn.co/image/ab67616d0000b2738612619562d9e86624479ec8" alt="Next Track Cover">
+        </div>
+        <div class="ntrackinfo">
+            <span class="tx ntitle" id="ntrack">Next Track Title</span>
+            <br>
+            <span class="tx nartist" id="nalbum">Next Artist Name</span>
+        </div>
+    </div>
+    <div class="lyrics"></div>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'spotify-circular';
+    src: url("https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+    background: rgb(18, 18, 18);
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    background: rgb(18, 18, 18);
+    background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(24, 24, 24) 40%, rgb(224, 224, 224) 100%);
+}
+
+img {
+    border-radius: 3%;
+}
+
+.image {
+    height: 100%;
+}
+
+.center-image {
+    position: relative;
+}
+
+.center-image img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 2%;
+    /* box-shadow: 0px 0px 4px 4px magenta; */
+
+}
+
+.trackinfo {
+    position: absolute;
+    display: inline;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 40%;
+}
+
+.ntrackinfo {
+    position: absolute;
+    display: inline;
+    top: 75%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 85%;
+}
+
+.tx {
+    font-family: 'spotify-circular', 'Noto Sans';
+}
+
+.artist {
+    font-size: 40pt;
+    color: gray;
+}
+
+.title {
+    font-size: 60pt;
+    color: white;
+}
+#progress-bar-wrapper {
+    margin-top: 10%;
+}
+#progress-bar-wrapper div {
+    display: inline-block;
+    vertical-align: baseline;
+}
+#progress {
+    width: 800px;
+    height: 5px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 3px;
+    top: 75%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#bar {
+    display: block !important;
+    width: 8px;
+    height: 5px;
+    background-color: rgb(54, 186, 88);
+    border-radius: 3px;
+}
+.next {
+    display: none !important;
+}
+
+#ncover {
+    height: 150px;
+    width: 150px;
+}
+
+.nimage {
+    position: absolute;
+    top: 75%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 75%;
+    border-radius: 3px;
+
+}
+
+.ntitle {
+    font-size: 20pt;
+    color: white;
+}
+
+.nartist {
+    font-size: 16pt;
+    color: gray;
+}
+
+.lyrics {
+    color: white;
+    position: absolute;
+    top: 92%;
+    font-size: 50pt;
+    margin-left: 2%;
+    /* height: 50pt; */
+}
+
+.lyrics-line {
+    display: block;
+    overflow: hidden;
+    height: 130pt;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.numbers {
+    color: white;
+    padding: 0 3px 0 3px;
+}
+#elapsed, #duration {
+    width: 33px;
+}
