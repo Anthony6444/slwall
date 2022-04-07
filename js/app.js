@@ -19,7 +19,7 @@ var generateRandomString = function(length) {
   };
 var client_id = "c1f03a9f4f2a4a3aacb76c2d347cafea";
 
-var redirect_uri = 'http://localhost:9009/callback.html';
+var redirect_uri = 'https://anthony6444.github.io/slwall/callback.html';
 
 var state = generateRandomString(16);
 enableLyrics = false;
