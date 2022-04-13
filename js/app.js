@@ -8,19 +8,21 @@ image.addEventListener('load', function () {
     $('body').css("background", "linear-gradient(0deg, rgb(18,18,18) 0%, rgb(24,24,24) 40%, rgb(" + colorThief.getColor(image) + ") 100%)")
     // $(".center-image img").css("box-shadow", "0px 0px 4px 4px rgb("+colorThief.getColor(image)+")")
 });
-var generateRandomString = function(length) {
+var generateRandomString = function (length) {
     var text = '';
     var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  
+
     for (var i = 0; i < length; i++) {
-      text += possible.charAt(Math.floor(Math.random() * possible.length));
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return text;
-  };
+};
 var client_id = "c1f03a9f4f2a4a3aacb76c2d347cafea";
-
-var redirect_uri = 'https://anthony6444.github.io/slwall/callback.html';
-
+if (window.origin == "http://localhost:9009") {
+    redirect_uri = "http://localhost:9009/callback.html"
+} else {
+    var redirect_uri = 'https://anthony6444.github.io/slwall/callback.html';
+}
 var state = generateRandomString(16);
 enableLyrics = false;
 
@@ -107,8 +109,8 @@ function updatetime(seconds, duration) {
     percent = ((seconds + extra) / duration) * 100;
     $('#bar').css("width", percent * 8 + "px")
     if (percent > 100) { getplaying(); extra = 0 }
-    $("#elapsed").text(Math.floor((seconds+extra)/60)+":"+String(Math.floor((seconds+extra) % 60)).padStart(2, "0"));
-    $("#duration").text(Math.floor(duration/60)+":"+String(Math.floor(duration % 60)).padStart(2, "0"));
+    $("#elapsed").text(Math.floor((seconds + extra) / 60) + ":" + String(Math.floor((seconds + extra) % 60)).padStart(2, "0"));
+    $("#duration").text(Math.floor(duration / 60) + ":" + String(Math.floor(duration % 60)).padStart(2, "0"));
     if (enableLyrics) {
         lyric(seconds + extra);
     } else {
