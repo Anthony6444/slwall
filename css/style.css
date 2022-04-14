@@ -14,6 +14,24 @@ body {
     height: 100%;
     background: rgb(18, 18, 18);
     background: linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(24, 24, 24) 40%, rgb(224, 224, 224) 100%);
+    overflow: hidden;
+}
+
+#beta-container {
+    position: relative;
+    margin: 0px 7.5% 0px 5%;
+    padding-top: 1%;
+    text-align: right;
+    /* overflow: hidden; */
+}
+#beta-container span {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    transform: rotate(45deg);
+    background-color: rgb(54, 186, 88);
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 img {

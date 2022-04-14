@@ -19,10 +19,19 @@ var generateRandomString = function (length) {
 };
 var client_id = "c1f03a9f4f2a4a3aacb76c2d347cafea";
 if (window.origin == "http://localhost:9009") {
-    redirect_uri = "http://localhost:9009/callback.html"
+    var redirect_uri = "http://localhost:9009/callback.html";
+    var show_beta = true;
 } else {
     var redirect_uri = 'https://anthony6444.github.io/slwall/callback.html';
+    var show_beta = false;
 }
+
+if (!show_beta) {
+    $("#beta-container").css("display", "none")
+} else {
+    document.title = document.title + " [BETA]"
+}
+
 var state = generateRandomString(16);
 enableLyrics = false;
 
