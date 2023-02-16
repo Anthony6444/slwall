@@ -88,6 +88,7 @@ function getplaying() {
 }
 getplaying();
 function getlyrics(track, artist) {
+    return null;
     var url = "https://strawberry-cupcake-01939.herokuapp.com/https://api.textyl.co/api/lyrics";
     url += "?q=" + encodeURIComponent(artist) + "%20" + encodeURIComponent(track);
     $.ajax({
