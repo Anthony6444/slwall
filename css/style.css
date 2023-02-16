@@ -43,7 +43,7 @@ img {
 .center-image img {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 65%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-left: 2%;
@@ -54,10 +54,10 @@ img {
 .trackinfo {
     position: absolute;
     display: inline;
-    top: 45%;
+    top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    margin-left: 40%;
+    margin-left: 45%;
 }
 
 .ntrackinfo {
@@ -74,12 +74,12 @@ img {
 }
 
 .artist {
-    font-size: 40pt;
+    font-size: 35pt;
     color: gray;
 }
 
 .title {
-    font-size: 60pt;
+    font-size: 55pt;
     color: white;
 }
 #progress-bar-wrapper {
@@ -90,7 +90,7 @@ img {
     vertical-align: baseline;
 }
 #progress {
-    width: 800px;
+    width: 725px;
     height: 5px;
     background-color: rgb(83, 83, 83);
     border-radius: 3px;
@@ -139,7 +139,7 @@ img {
     color: white;
     position: absolute;
     top: 92%;
-    font-size: 50pt;
+    font-size: 45pt;
     margin-left: 2%;
     /* height: 50pt; */
 }
