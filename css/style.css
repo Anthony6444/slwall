@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'spotify-circular';
-    src: url("assets/GothamMedium.ttf");
-    font-display: swap;
-}
-
 html {
     height: 100%;
     background: rgb(18, 18, 18);
@@ -76,7 +70,7 @@ img {
 }
 
 .tx {
-    font-family: 'spotify-circular', 'Noto Sans';
+    font-family: 'DM Sans', 'Noto Sans';
 }
 
 .artist {
