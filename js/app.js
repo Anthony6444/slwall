@@ -88,30 +88,6 @@ function getplaying() {
 }
 getplaying();
 function getlyrics(track, artist) {
-    return null;
-    var url = "https://strawberry-cupcake-01939.herokuapp.com/https://api.textyl.co/api/lyrics";
-    url += "?q=" + encodeURIComponent(artist) + "%20" + encodeURIComponent(track);
-    $.ajax({
-        url: url,
-        headers: {
-            "Accept": "application/json"
-        },
-        statusCode: {
-            404: function () {
-                // on fail
-                lyrics = [{ seconds: 1, lyrics: "" }]
-            }
-        },
-        success: function (res) {
-            lyrics = res;
-            console.log(lyrics)
-            if (enableLyrics) {
-                $('.lyrics').append('<span class="tx lyrics-line" id="lyrics">' + lyrics[0]['lyrics'] + '</span>')
-            } else {
-                $('.lyrics').append('<span class="tx lyrics-line" id="lyrics"></span>')
-            }
-        }
-    });
     clearInterval(interval);
     interval = setInterval(updatetime, 500, seconds, duration);
 }
